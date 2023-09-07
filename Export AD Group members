@@ -1,0 +1,9 @@
+1.Get-Module -ListAvailable
+
+2.Get-ADGroup -filter * | sort name | select name
+
+3.Get-ADGroupMember -identity "HR Full”
+
+4.Get-ADGroupMember -identity "HR Full" | select name
+
+5.Get-ADGroupMember -identity "HR Full" | select name | Export-csv -path c:\it\filename.csv -Notypeinformation
