@@ -1,0 +1,3 @@
+Get-ADComputer -Filter * -Property Name, OperatingSystem |
+Where-Object {$_.OperatingSystem -like "Windows"} |
+Export-Csv -Path "C:\Comp.csv" -NoTypeInformation
